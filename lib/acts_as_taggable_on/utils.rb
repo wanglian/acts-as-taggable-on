@@ -16,7 +16,7 @@ module ActsAsTaggableOn
       end
 
       def sha_prefix(string)
-        Digest::SHA1.hexdigest("#{string}#{rand}")[0..6]
+        Digest::SHA1.hexdigest("#{rand}#{string}")[0..6]
       end
       
       private
